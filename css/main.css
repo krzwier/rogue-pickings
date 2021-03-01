@@ -1,0 +1,167 @@
+/***** GLOBAL STYLES *****/
+
+body {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+/***** GRID *****/
+
+.full-width {
+    margin: 0 25px;
+    overflow: auto;
+    width: 1200px;
+}
+
+.third-width {
+    float: left;
+    width: 400px;
+}
+
+.two-thirds-width {
+    float: right;
+    width: 800px;
+}
+
+/***** HEADER *****/
+
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 23px;
+    padding: 50px 0 40px 0;
+    text-transform: uppercase;
+}
+
+header span {
+    color: #77a466;
+}
+
+nav {
+    float: right; 
+    padding: 50px 0 40px 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #77a466;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 23px;
+    padding-left: 25px; 
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/***** TOP SECTION *****/
+
+#top-img {
+    height: 288px;
+    border-bottom: 3px solid #77a466;
+    border-top: 3px solid #77a466;
+}
+
+#welcome {
+    padding: 30px 0;
+}
+
+#top-section h2 {
+    color: #77a466;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#top-section p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/***** BOTTOM SECTION *****/
+
+#bottom-section .full-width {
+    border-bottom: 1px solid #dedbdc;
+    border-top: 1px solid #dedbdc;
+}
+
+#bottom-section .third-width {
+    padding: 25px 0;
+}
+
+#bottom-section h3 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+/***** BOTTOM LEFT SECTION *****/
+
+#bottom-left h3 {
+    padding-left: 0;
+}
+
+#bottom-left ul {
+    list-style-type: none;
+    padding: 0 30px 0 0;
+}
+
+#bottom-left ul li {
+    padding: 0 0 18px 0;
+}
+
+#bottom-left a {
+    color: #77a466;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+/***** BOTTOM CENTER SECTION *****/
+
+#bottom-center {
+    border-left: 1px solid #dedbdc;
+    border-right: 1px solid #dedbdc;
+    width: 398px;
+}
+
+#bottom-center p {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0 30px;
+}
+
+/***** BOTTOM RIGHT SECTION *****/
+
+#bottom-right p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 30px;
+}
+
+/***** FOOTER SECTION *****/
+
+footer h2 {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer span {
+    color: #77a466;
+    font-family: 'Galada', cursive;
+    text-transform: none;
+}
+
+
