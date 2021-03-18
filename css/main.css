@@ -1,167 +1,156 @@
-/***** GLOBAL STYLES *****/
-
 body {
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
-    max-width: 1250px;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
-/***** GRID *****/
-
-.full-width {
-    margin: 0 25px;
-    overflow: auto;
-    width: 1200px;
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.third-width {
-    float: left;
-    width: 400px;
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 12px;
 }
 
-.two-thirds-width {
-    float: right;
-    width: 800px;
+p {
+	font-size: 14px;
+	line-height: 21px;
+    padding: 0 30px;
 }
 
-/***** HEADER *****/
+/*The widths are in a percentage!*/
+header {
+	height: 110px;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+}
 
 header h1 {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 23px;
-    padding: 50px 0 40px 0;
-    text-transform: uppercase;
+	float: left;
+	margin: 0;
+	padding: 38px 0;
+}
+header h1 span {
+	color: #77a466;
 }
 
-header span {
-    color: #77a466;
+header nav {
+	float: right;
+	padding: 46px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 0 10px;
+	display: inline;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
 }
 
-nav {
-    float: right; 
-    padding: 50px 0 40px 0;
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
 }
 
-nav ul li {
-    display: inline-block;
+.main-image {
+	height: auto;
+	float: left;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
 }
 
-nav ul li a {
-    color: #77a466;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 23px;
-    padding-left: 25px; 
-    text-decoration: none;
-    text-transform: uppercase;
+.main-title {
+	height: auto;
+	float: left;
+}
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
+	line-height: 25px;
 }
 
-/***** TOP SECTION *****/
-
-#top-img {
-    height: 288px;
-    border-bottom: 3px solid #77a466;
-    border-top: 3px solid #77a466;
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #eee;
 }
 
-#welcome {
-    padding: 30px 0;
+.section-one h3 {
+	padding: 10px 0;
 }
 
-#top-section h2 {
-    color: #77a466;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 23px;
-    padding-bottom: 25px;
-    text-transform: uppercase;
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
 }
 
-#top-section p {
-    font-size: 16px;
-    line-height: 25px;
+.section-two h3,
+.section-three h3 {
+	padding: 10px 30px;
 }
 
-/***** BOTTOM SECTION *****/
-
-#bottom-section .full-width {
-    border-bottom: 1px solid #dedbdc;
-    border-top: 1px solid #dedbdc;
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
 }
 
-#bottom-section .third-width {
-    padding: 25px 0;
+.reviews {
+	color: #333;
+	font-size: 16px;
+	line-height: 21px;
 }
 
-#bottom-section h3 {
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 25px;
-    margin-bottom: 20px;
-    padding-left: 30px;
-    text-transform: uppercase;
+.address {
+	font-size: 16px;
+	line-height: 24px;
 }
 
-/***** BOTTOM LEFT SECTION *****/
-
-#bottom-left h3 {
-    padding-left: 0;
+/*The widths are in a percentage!*/
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
 }
-
-#bottom-left ul {
-    list-style-type: none;
-    padding: 0 30px 0 0;
-}
-
-#bottom-left ul li {
-    padding: 0 0 18px 0;
-}
-
-#bottom-left a {
-    color: #77a466;
-    font-size: 16px;
-    line-height: 18px;
-    text-decoration: none;
-}
-
-/***** BOTTOM CENTER SECTION *****/
-
-#bottom-center {
-    border-left: 1px solid #dedbdc;
-    border-right: 1px solid #dedbdc;
-    width: 398px;
-}
-
-#bottom-center p {
-    font-size: 16px;
-    line-height: 21px;
-    padding: 0 30px;
-}
-
-/***** BOTTOM RIGHT SECTION *****/
-
-#bottom-right p {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 30px;
-}
-
-/***** FOOTER SECTION *****/
-
-footer h2 {
-    font-size: 16px;
-    line-height: 23px;
-    margin: 30px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 footer span {
-    color: #77a466;
-    font-family: 'Galada', cursive;
-    text-transform: none;
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
 }
-
-
