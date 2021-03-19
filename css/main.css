@@ -1,167 +1,231 @@
-/***** GLOBAL STYLES *****/
+/* ---- GLOBAL STYLES ---- */
+
+html {
+    font-size: 16px;
+}
 
 body {
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
-    max-width: 1250px;
+    display: flex;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    justify-content: center;
 }
 
-/***** GRID *****/
-
-.full-width {
-    margin: 0 25px;
-    overflow: auto;
-    width: 1200px;
+.container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1200px;
+    width: 90%;
 }
 
-.third-width {
-    float: left;
-    width: 400px;
+h1, h2, h3 {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.two-thirds-width {
-    float: right;
-    width: 800px;
+h1 {
+    font-size: 1.875em;
+    text-align: center;
 }
 
-/***** HEADER *****/
+h2 {
+    font-size: 1.125em;
+}
+
+h3 {
+    font-size: 0.75em;
+}
+
+p {
+    font-size: 0.875em;
+    line-height: 1.3125em;
+}
+
+/* ---- HEADER SECTION ---- */
+
+header {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#headline {
+    align-items: center;
+    border-bottom: 3px solid #77a466;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 header h1 {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 23px;
-    padding: 50px 0 40px 0;
+    margin: 20px 0;
+}
+
+header h1 span {
+    color: #77a466;
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+header nav ul {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    font-size: 0.875em;
+    font-weight: 700;
+    padding: 15px 0;
     text-transform: uppercase;
 }
 
-header span {
+header nav ul li a {
     color: #77a466;
-}
-
-nav {
-    float: right; 
-    padding: 50px 0 40px 0;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: #77a466;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 23px;
-    padding-left: 25px; 
     text-decoration: none;
-    text-transform: uppercase;
 }
 
-/***** TOP SECTION *****/
+/* ---- ABOUT SECTION and INFO DIVS ---- */
 
-#top-img {
-    height: 288px;
-    border-bottom: 3px solid #77a466;
+.top-section, .bottom-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom-section {
+    border-top: 1px solid #eee;
+}
+
+.main-image img {
     border-top: 3px solid #77a466;
+    border-bottom: 3px solid #77a466;
+    width: 100%;
 }
 
-#welcome {
-    padding: 30px 0;
-}
-
-#top-section h2 {
-    color: #77a466;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 23px;
-    padding-bottom: 25px;
-    text-transform: uppercase;
-}
-
-#top-section p {
-    font-size: 16px;
-    line-height: 25px;
-}
-
-/***** BOTTOM SECTION *****/
-
-#bottom-section .full-width {
-    border-bottom: 1px solid #dedbdc;
-    border-top: 1px solid #dedbdc;
-}
-
-#bottom-section .third-width {
+.main-title {
     padding: 25px 0;
 }
 
-#bottom-section h3 {
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 25px;
-    margin-bottom: 20px;
-    padding-left: 30px;
-    text-transform: uppercase;
-}
-
-/***** BOTTOM LEFT SECTION *****/
-
-#bottom-left h3 {
-    padding-left: 0;
-}
-
-#bottom-left ul {
-    list-style-type: none;
-    padding: 0 30px 0 0;
-}
-
-#bottom-left ul li {
-    padding: 0 0 18px 0;
-}
-
-#bottom-left a {
+.main-title h2 {
     color: #77a466;
-    font-size: 16px;
-    line-height: 18px;
-    text-decoration: none;
+    padding-bottom: 25px;
+    text-align: left;
 }
 
-/***** BOTTOM CENTER SECTION *****/
-
-#bottom-center {
-    border-left: 1px solid #dedbdc;
-    border-right: 1px solid #dedbdc;
-    width: 398px;
+.main-title p {
+    font-size: 1em;
+    line-height: 1.5625em;
 }
 
-#bottom-center p {
-    font-size: 16px;
-    line-height: 21px;
-    padding: 0 30px;
+.section-one, .section-two, .section-three {
+    padding: 25px 0;
+    width: 100%;
 }
 
-/***** BOTTOM RIGHT SECTION *****/
-
-#bottom-right p {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 30px;
+.section-two, .section-three {
+    border-top: 1px solid #eee;
 }
 
-/***** FOOTER SECTION *****/
+h3 {
+    padding: 10px 0;
+}
 
-footer h2 {
-    font-size: 16px;
-    line-height: 23px;
-    margin: 30px 0;
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    color: #77a466;
+    padding: 10px 0;
+}
+
+.reviews {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.3125em;
+}
+
+.address {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* ---- FOOTER SECTION ---- */
+
+footer {
+    align-items: center;
+    border-top: 3px solid #eee;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
     text-align: center;
-    text-transform: uppercase;
+    width: 100%;
 }
 
 footer span {
     color: #77a466;
     font-family: 'Galada', cursive;
-    text-transform: none;
+    font-size: 0.875em;
+    text-transform: lowercase;
 }
 
+/* ---- TABLET STYLES FOR WIDTH > 768px ---- */
 
+@media (min-width: 768px) {
+    .section-one, .section-two, .section-three {
+        width: 29.6%;
+    }
+    .section-two, .section-three {
+        border-top: none;
+        border-left: 1px solid #eee;
+    }
+    .section-two {
+        padding: 25px;
+    }
+    .section-three {
+        padding: 25px 0 25px 25px;
+    }
+}
+
+/* ---- DESKTOP STYLES FOR WIDTH > 1200px ---- */
+
+@media (min-width: 1200px) {
+    header {
+        align-items: left;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    #headline {
+        border: none;
+        justify-content: flex-start;
+    }
+    header nav ul {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    header nav ul li {
+        display: inline;
+        font-size: 0.875em;
+        font-weight: 700;
+        padding-left: 20px;
+        text-transform: uppercase;
+    }
+}
