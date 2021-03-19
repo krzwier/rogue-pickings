@@ -1,17 +1,19 @@
-body {
-    width: 92%;
-    margin: 0 4%;
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html {
+    font-size: 16px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+body {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1em;
     display: flex;
-    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.container {  
+    max-width: 1200px;
+    width: 90%;  
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -23,34 +25,42 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 p {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 0.875em;
+    line-height: 1.3125em;
 }
 
 /*The widths are in a percentage!*/
 
 header {
-    border-bottom: 3px solid #77a466;
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
 
+#headline {
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 3px solid #77a466;
+    display: flex;
+    justify-content: center;
+}
+
 header h1 {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 header h1 span {
@@ -76,8 +86,8 @@ header nav ul {
 header nav ul li {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
-    padding: 10px 0;
+    font-size: 0.875em;
+    padding: 15px 0;
     display: inline;
 }
 
@@ -96,23 +106,28 @@ header nav ul li a {
 
 .main-image img {
     width: 100%;
+    border-top: 3px solid #77a466;
     border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+    padding: 25px 0;
 }
 
 .main-title h2 {
     text-align: left;
-    padding: 5px 0;
+    padding-bottom: 25px;
     color: #77a466;
 }
 
 .main-title p {
-    padding: 0;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1em;
+    line-height: 1.5625em;
 }
 
 .section-one, .section-two, .section-three {
     border-top: 1px solid #eee;
+    padding: 25px 0;
 }
 
 h3 {
@@ -131,19 +146,21 @@ h3 {
 
 .reviews {
     color: #333;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1em;
+    line-height: 1.3125em;
 }
 
 .address {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 /*The widths are in a percentage!*/
 
 footer {
     border-top: 3px solid #eee;
+    width: 100%;
+    padding: 25px 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -154,5 +171,5 @@ footer span {
     font-family: 'Galada', cursive;
     text-transform: lowercase;
     color: #77a466;
-    font-size: 14px;
+    font-size: 0.875em;
 }
